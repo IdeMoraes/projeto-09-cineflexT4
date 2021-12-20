@@ -10,7 +10,6 @@ export default function TelaRota({items}) {
 		return <img src="https://a-static.mlcdn.com.br/574x431/adesivo-parede-decorativo-loading-carregando-palavra-barra-aartedecor/aartedecor/1541-1863/bbc74def4e1116a12776398372101bcd.jpg" />;
 	}
 
-    console.log(items);
     return (
         <>
         <Topo/>
