@@ -2,12 +2,14 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Sessao from '../Sessao';
+import Topo from '../Topo';
+
 export default function TelaFilme() {
 
     let {idFilme} = useParams();
 
     idFilme=idFilme.slice(-1)
-    console.log(idFilme);
+
     const [horarios, setHorarios] = useState(null);
 
     useEffect(() => {
@@ -21,12 +23,15 @@ export default function TelaFilme() {
 	}
 
     return (
+        <>
+        <Topo/>
         <div className = "tela-filme">
             <div className ="instrucao">Selecione o horário</div>
-            <h1>Aqui vai TelaFilme</h1>
+
             <div className='Sessoes'>
-                {horarios.days.map((weekday,date) => (<Sessao {...date} {...weekday}/>))}
+                {horarios.days.map((weekday,date,showtimes) => (<Sessao {...date} {...weekday} {...showtimes} />))}
             </div>
         </div>
+        </>
     );
 }

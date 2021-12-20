@@ -1,0 +1,3 @@
+.assento{width: 26px; height: 26px;border-radius: 50%;display: flex;justify-content: center;align-items: center;margin-left: 3.5px;margin-right: 3.5px; margin-top: 10px;margin-bottom: 10px;}
+.disponivel {background-color: #C3CFD9;}
+.indisponivel {background-color: #FBE192;}
