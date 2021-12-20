@@ -30,6 +30,20 @@ export default function TelaSessao(props) {
             <div className="assentos">
             {assentos.seats.map((id,name,isAvailable) => (<Assento {...id} {...name} {...isAvailable} />))}
             </div>
+            <div className='legendas'>
+                <div className='legenda'>
+                    <div className='cor verde'></div>
+                    <div className='significado'>Selecionado</div>
+                </div>
+                <div className='legenda'>
+                    <div className='cor cinza'></div>
+                    <div className='significado'>Disponível</div>
+                </div>
+                <div className='legenda'>
+                    <div className='cor amarelo'></div>
+                    <div className='significado'>Indisponível</div>
+                </div>
+            </div>
 
         </div>
         </>

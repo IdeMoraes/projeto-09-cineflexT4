@@ -1,1 +1,11 @@
 .assentos{margin-left: 17px;margin-right: 17px;display: flex;flex-wrap: wrap;justify-content: space-around;}
+
+.cor{width: 26px; height: 26px;border-radius: 50%;display: flex;justify-content: center;align-items: center;margin-bottom: 2px;}
+.verde {background-color : #8DD7CF;}
+.cinza {background-color: #C3CFD9;}
+.amarelo {background-color: #FBE192;}
+
+.significado{font-size: 13px;color: #4E5A65;}
+
+.legenda{display: flex;justify-content: center;align-items: center; flex-wrap: wrap;flex-direction: column; }
+.legendas {margin-left: 45px;margin-right: 45px;display: flex;justify-content: space-around;}

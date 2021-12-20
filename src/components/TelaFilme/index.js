@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Sessao from '../Sessao';
 import Topo from '../Topo';
+import './style.css';
 
 export default function TelaFilme() {
 
@@ -31,6 +32,11 @@ export default function TelaFilme() {
             <div className='Sessoes'>
                 {horarios.days.map((weekday,date,showtimes) => (<Sessao {...date} {...weekday} {...showtimes} />))}
             </div>
+            <div className='rodape'>
+                <div className='small-poster'><img src={horarios.posterURL} alt={horarios.title}/></div>
+                <div className='informacoes'><p>{horarios.title}</p></div>
+            </div>
+            
         </div>
         </>
     );
